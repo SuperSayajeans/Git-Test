@@ -12,8 +12,6 @@ body {
 
 /* The element to apply the animation to */
 img {
-    width: 18vw;
-    height: 32vh;
     background-color:red;
 	animation-iteration-count:1;
 	animation-duration: 2s;
@@ -27,11 +25,50 @@ header {
 	float: left;
 }
 
+.signature {
+	width: 18vw;
+    height: 32vh;
+}
+
 .header, .footer {
     background-color: hsla(225, 100%, 25%, 0.6);
     text-align: center;
     padding: 20px;
 }
+
+#slideshow {
+  overflow: hidden;
+  height: 510px;
+  width: 728px;
+  margin: 0 auto;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 18s ease infinite;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+  
+}
+
+.slide-number {
+  color: #000;
+  text-align: center;
+  font-size: 10em;
+}
+
+@-webkit-keyframes slide {
+  20% {margin-left: 0px;}
+  30% {margin-left: -728px;}
+  50% {margin-left: -728px;}
+  60% {margin-left: -1456px;}
+  70% {margin-left: -1456px;}
+  80% {margin-left: -2184px;}
+  90% {margin-left: -2184px;}
 
 .ipsum {
 	margin: 5vw;
