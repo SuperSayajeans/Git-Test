@@ -69,4 +69,7 @@ header {
   70% {margin-left: -1456px;}
   80% {margin-left: -2184px;}
   90% {margin-left: -2184px;}
+
+.ipsum {
+	margin: 5vw;
 }
