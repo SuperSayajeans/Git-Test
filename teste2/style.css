@@ -12,8 +12,8 @@ body {
 
 /* The element to apply the animation to */
 img {
-    width: 9vw;
-    height: 16vh;
+    width: 18vw;
+    height: 32vh;
     background-color:red;
 	animation-iteration-count:2;
 	animation-duration: 6s;
@@ -23,10 +23,12 @@ header {
 	text-align: center;
 }
 
-
+.float {
+	float: left;
+}
 
 .header, .footer {
-    background-color: #F1F1F1;
+    background-color: hsla(225, 100%, 25%, 0.6);
     text-align: center;
     padding: 20px;
 }
