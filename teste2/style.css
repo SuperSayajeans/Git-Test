@@ -2,3 +2,17 @@ body {
 	background-color: green;
 }
 
+@keyframes example {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+/* The element to apply the animation to */
+img {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation-name: example;
+	animation-duration: 4s;
+	animation-iteration-count:infinite;
+}
