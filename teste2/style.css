@@ -40,6 +40,8 @@ img {
     width: 23%;
     height: 23%;
     background-color:red;
+	animation-iteration-count:2;
+	animation-duration: 6s;
 }
 
 header {
@@ -48,29 +50,20 @@ header {
 
 #i1st{
 	animation-name: example1;
-	animation-duration: 6s;
-	animation-iteration-count:infinite;
+
 }
 #i2nd{
 	animation-name: example2;
-	animation-duration: 6s;
-	animation-iteration-count:infinite;
 }
 
 #i3rd{
 	animation-name: example3;
-	animation-duration: 6s;
-	animation-iteration-count:infinite;
 }
 
 #i4th{
 	animation-name: example4;
-	animation-duration: 6s;
-	animation-iteration-count:infinite;
 }
 
 #i5th{
 	animation-name: example5;
-	animation-duration: 3s;
-	animation-iteration-count:infinite;
 }
