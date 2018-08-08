@@ -1,0 +1,29 @@
+@keyframes example1 {
+    0% {transform:rotateZ(0deg) translateX(20vw);}
+	50% {transform:rotateZ(360deg)   translateX(20vw) scale(2);}
+	100% {transform:rotateZ(0deg)   translateX(10vw) scale(1);}
+}
+
+@keyframes example2 {
+    0% {transform:rotateY(0deg);}
+	50% {transform:rotateY(360deg);}
+	100% {transform:rotateY(0deg);}
+}
+
+@keyframes example3 {
+    0% {transform:rotateX(0deg) scale(2);}
+	50% {transform:rotateX(360deg) scale(1);}
+	100% {transform:rotateX(0deg) scale(2);}
+}
+
+@keyframes example4 {
+    0% {transform:rotateX(0deg)  rotateY(0deg) scale(1);}
+	50% {transform:rotateX(360deg)  rotateY(360deg) scale(2);}
+	100% {transform:rotateX(0deg)  rotateY(00deg) scale(1);}
+}
+
+@keyframes example5 {
+    0% {transform:rotateX(0deg)  rotateZ(0deg);}
+	50% {transform:rotateX(360deg)  rotateZ(360deg);}
+	100% {transform:rotateX(0deg)  rotateZ(00deg);}
+}

@@ -1,3 +1,6 @@
+
+@import url("image-animation.css");
+
 * {
 	font-family: "Arial";
 }
@@ -6,35 +9,7 @@ body {
 	background-color: green;
 }
 
-@keyframes example1 {
-    0% {transform:rotateZ(0deg) translateX(20vw);}
-	50% {transform:rotateZ(360deg)   translateX(20vw) scale(2);}
-	100% {transform:rotateZ(0deg)   translateX(10vw) scale(1);}
-}
 
-@keyframes example2 {
-    0% {transform:rotateY(0deg);}
-	50% {transform:rotateY(360deg);}
-	100% {transform:rotateY(0deg);}
-}
-
-@keyframes example3 {
-    0% {transform:rotateX(0deg) scale(2);}
-	50% {transform:rotateX(360deg) scale(1);}
-	100% {transform:rotateX(0deg) scale(2);}
-}
-
-@keyframes example4 {
-    0% {transform:rotateX(0deg)  rotateY(0deg) scale(1);}
-	50% {transform:rotateX(360deg)  rotateY(360deg) scale(2);}
-	100% {transform:rotateX(0deg)  rotateY(00deg) scale(1);}
-}
-
-@keyframes example5 {
-    0% {transform:rotateX(0deg)  rotateZ(0deg);}
-	50% {transform:rotateX(360deg)  rotateZ(360deg);}
-	100% {transform:rotateX(0deg)  rotateZ(00deg);}
-}
 /* The element to apply the animation to */
 img {
     width: 23%;
@@ -48,22 +23,10 @@ header {
 	text-align: center;
 }
 
-#i1st{
-	animation-name: example1;
 
-}
-#i2nd{
-	animation-name: example2;
-}
 
-#i3rd{
-	animation-name: example3;
-}
-
-#i4th{
-	animation-name: example4;
-}
-
-#i5th{
-	animation-name: example5;
+.header, .footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 20px;
 }

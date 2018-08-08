@@ -1,0 +1,20 @@
+@import url("keyframes.css");
+#i1st{
+	animation-name: example1;
+
+}
+#i2nd{
+	animation-name: example2;
+}
+
+#i3rd{
+	animation-name: example3;
+}
+
+#i4th{
+	animation-name: example4;
+}
+
+#i5th{
+	animation-name: example5;
+}
