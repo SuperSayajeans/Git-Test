@@ -9,6 +9,10 @@ body {
 	background-color: green;
 }
 
+h1 {
+	vertical-align: middle;
+}
+
 
 /* The element to apply the animation to */
 img {
@@ -17,23 +21,24 @@ img {
 	animation-duration: 2s;
 }
 
-header {
-	text-align: center;
+header, footer {
+	background-color: hsla(225, 100%, 25%, 0.6);
+    text-align: center;
+    padding: 20px;
 }
 
 .float {
-	float: left;
+	position: relative;
+	right: 22%;
+}
+
+.inline {
+	display: inline;
 }
 
 .signature {
 	width: 18vw;
     height: 32vh;
-}
-
-.header, .footer {
-    background-color: hsla(225, 100%, 25%, 0.6);
-    text-align: center;
-    padding: 20px;
 }
 
 #slideshow {
@@ -72,6 +77,7 @@ header {
 }
 .section {
 	margin: 5vw;
+	text-align: justify;
 }
 
 
