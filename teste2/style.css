@@ -12,8 +12,8 @@ body {
 
 /* The element to apply the animation to */
 img {
-    width: 23%;
-    height: 23%;
+    width: 9vw;
+    height: 16vh;
     background-color:red;
 	animation-iteration-count:2;
 	animation-duration: 6s;
