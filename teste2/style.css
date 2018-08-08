@@ -1,3 +1,7 @@
+* {
+	font-family: "Arial";
+}
+
 body {
 	background-color: green;
 }
@@ -9,10 +13,17 @@ body {
 
 /* The element to apply the animation to */
 img {
-    width: 100px;
-    height: 100px;
+    width: 23%;
+    height: 25%;
     background-color: red;
     animation-name: example;
 	animation-duration: 4s;
-	animation-iteration-count:infinite;
+	animation-iteration-count:1;
 }
+
+header {
+	text-align: center;
+	background-image: url("./dollynho_memes/2.jpg");
+	height: 400px;
+}
+
