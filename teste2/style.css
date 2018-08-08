@@ -15,8 +15,8 @@ img {
     width: 9vw;
     height: 16vh;
     background-color:red;
-	animation-iteration-count:2;
-	animation-duration: 6s;
+	animation-iteration-count:1;
+	animation-duration: 2s;
 }
 
 header {
