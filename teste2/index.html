@@ -19,10 +19,15 @@
 	</header>
 
 	<div class="topnav" id="sticky-nav">
-		<a class="active" href="#">Inicio (Warning, do-nothing button)</a>
-		<a href="#slideshow">Slide-Show</a>
-		<a href="#historia">História do Dollynho</a>
-		<a href="#sabores">Tabela de Sabores</a>
+
+		<div class="navmenu">
+			<label id="labelmenu" for="show-menu" class="show-menu">Show Menu</label>
+			<input type="checkbox" id="show-menu" role="button">
+			<a class="amenu" class="active" href="#">Inicio (Warning, do-nothing button)</a>
+			<a class="amenu" href="#slideshow">Slide-Show</a>
+			<a class="amenu" href="#historia">História do Dollynho</a>
+			<a class="amenu" href="#sabores">Tabela de Sabores</a>
+		</div>
 	</div>
 	<section class="section content">
 
@@ -184,7 +189,7 @@
 		var header = document.getElementById("sticky-nav");
 		var sticky = header.offsetTop;
 		function myFunction() {
-			
+
 			console.log(window.pageYOffset + " : " + header.offsetTop);
 			if (window.pageYOffset > sticky) {
 				header.classList.add("sticky");
@@ -194,7 +199,7 @@
 		}
 		window.onscroll = function () { myFunction() };
 
-		
+
 
 
 	</script>
