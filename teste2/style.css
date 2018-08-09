@@ -110,5 +110,5 @@ table, th, td {
 }
 
 .sticky + .content {
-  padding-top: 8vh;
+  padding-top: 23px;
 }
