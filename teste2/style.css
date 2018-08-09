@@ -62,7 +62,8 @@ header, footer {
 }
 
 .section {
-	margin: 5vw;
+  margin: 5vw;
+  
 	text-align: justify;
 }
 
@@ -100,4 +101,14 @@ table, th, td {
 .topnav a.active {
   background-color: #4CAF50;
   color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 8vh;
 }
