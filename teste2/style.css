@@ -118,6 +118,11 @@ table, th, td {
 }
 
 @media screen and (max-width: 785px) {
+  input[type=checkbox]:checked~.amenu {
+    display: block;
+    width: 100vw;
+    position: relative;
+  }
   .amenu {
     overflow: hidden;
   }
@@ -150,11 +155,7 @@ input[type=checkbox] {
 
 /*Show menu when invisible checkbox is checked*/
 
-input[type=checkbox]:checked~.amenu {
-  display: block;
-  width: 100vw;
-  position: relative;
-}
+
 
 #labelmenu:hover {
   cursor: pointer;
