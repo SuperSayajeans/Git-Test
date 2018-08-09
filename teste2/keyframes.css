@@ -29,12 +29,16 @@
 }
 
 
-@-webkit-keyframes slide {
-	20% {margin-left: 0px;}
+@keyframes slide {
+	12% {margin-left: 0px;}
+	24% {margin-left: -728px;}
 	30% {margin-left: -728px;}
-	50% {margin-left: -728px;}
-	60% {margin-left: -1456px;}
-	70% {margin-left: -1456px;}
-	80% {margin-left: -2184px;}
-	90% {margin-left: -2184px;}
+	36% {margin-left: -1456px;}
+	42% {margin-left: -1456px;}
+	48% {margin-left: -2184px;}
+	54% {margin-left: -2184px;}
+	60% {margin-left: -2912px;}
+	66% {margin-left: -2912px;}
+	72% {margin-left: -3640px;}
+	78% {margin-left: -3640px;}
   }
