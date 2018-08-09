@@ -40,23 +40,6 @@ header, footer {
   height: 32vh;
 }
 
-#slideshow {
-  overflow: hidden;
-  height: 510px;
-  width: 728px;
-  margin: 0 auto;
-}
-
-.slide-wrapper {
-  width: 4368px;
-  animation: slide 28s ease infinite;
-}
-
-.slide {
-  float: left;
-  height: 510px;
-  width: 728px;
-}
 
 .section {
   margin: 5vw;
@@ -132,6 +115,24 @@ table, th, td {
   .show-menu {
     display: block;
   }
+  #slideshow {
+    overflow: hidden;
+    height: 90vw;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  
+  .slide-wrapper {
+    width: 450vw;
+    animation: slide2 28s ease infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 90vw;
+    width: 90vw;
+  }
+  
 }
 
 @media screen and (min-width: 786px) {
@@ -145,6 +146,24 @@ table, th, td {
   .show-menu {
     display: none;
   }
+  #slideshow {
+    overflow: hidden;
+    height: 510px;
+    width: 728px;
+    margin: 0 auto;
+  }
+  
+  .slide-wrapper {
+    width: 4368px;
+    animation: slide 28s ease infinite;
+  }
+  
+  .slide {
+    float: left;
+    height: 510px;
+    width: 728px;
+  }
+  
 }
 
 /* Hide the square of the checkbox: */
