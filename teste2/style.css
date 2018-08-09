@@ -129,6 +129,19 @@ table, th, td {
   }
 }
 
+@media screen and (min-width: 786px) {
+  .amenu {
+    overflow: hidden;
+  }
+  .amenu {
+    display: unset;
+    width: auto;
+  }
+  .show-menu {
+    display: none;
+  }
+}
+
 /* Hide the square of the checkbox: */
 
 input[type=checkbox] {
@@ -139,8 +152,7 @@ input[type=checkbox] {
 
 input[type=checkbox]:checked~.amenu {
   display: block;
-  padding-left: 6vw;
-  padding-right: 8vw;
+  width: 100vw;
   position: relative;
 }
 
