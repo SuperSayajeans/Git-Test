@@ -121,26 +121,31 @@ table, th, td {
   .amenu {
     overflow: hidden;
   }
-  [class="amenu"] {
+  .amenu {
     display: none;
   }
-  .show-menu{
-    display:block;
+  .show-menu {
+    display: block;
   }
 }
 
 /* Hide the square of the checkbox: */
-input[type=checkbox]{
+
+input[type=checkbox] {
   display: none;
 }
 
 /*Show menu when invisible checkbox is checked*/
-input[type=checkbox]:checked ~ .amenu{
+
+input[type=checkbox]:checked~.amenu {
   display: block;
+  padding-left: 6vw;
+  padding-right: 8vw;
+  position: relative;
 }
 
-#labelmenu:hover{
-  cursor:pointer;
+#labelmenu:hover {
+  cursor: pointer;
 }
 
 /* https://medialoot.com/blog/how-to-create-a-responsive-navigation-menu-using-only-css/ */
