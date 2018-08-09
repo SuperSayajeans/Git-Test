@@ -6,7 +6,7 @@
 }
 
 body {
-	background-color: green;
+	background-color: forestgreen;
 }
 
 h1 {
@@ -22,9 +22,10 @@ img {
 }
 
 header, footer {
-	background-color: hsla(225, 100%, 25%, 0.6);
+	background-color: darkgreen ;
     text-align: center;
     padding: 20px;
+  color: orangered;
 }
 
 .float {
@@ -60,25 +61,54 @@ header, footer {
   
 }
 
-@keyframes slide {
-  12% {margin-left: 0px;}
-  24% {margin-left: -728px;}
-  30% {margin-left: -728px;}
-  36% {margin-left: -1456px;}
-  42% {margin-left: -1456px;}
-  48% {margin-left: -2184px;}
-  54% {margin-left: -2184px;}
-  60% {margin-left: -2912px;}
-  66% {margin-left: -2912px;}
-  72% {margin-left: -3640px;}
-  78% {margin-left: -3640px;}
-}
 .section {
-	margin: 5vw;
+  margin: 5vw;
+  
 	text-align: justify;
 }
 
 
 table, th, td {
   border: 1px solid black;
+}
+
+.central{
+  /* text-align: center; */
+  margin-left:auto; 
+  margin-right:auto;
+
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 8vh;
 }
