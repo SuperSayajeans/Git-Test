@@ -1,9 +1,7 @@
 // Comando para transpilar  $ sass --watch style.scss style.css
-
 // Comentários com // não irão aparecer no css, porém os com /**/ irão!
-
 // **Cores
- $main-green: forestgreen;
+$main-green: forestgreen;
 $title-font: normal 24px/1.5 'Open Sans',
 sans-serif;
 $menu-font: normal,
@@ -18,7 +16,6 @@ $header-and-footer-font-color: orangered;
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 $number-images: 6;
 $jump: 100 / $number-images;
-
 .show-menu {
     font-family: $menu-font;
     text-decoration: none;
@@ -77,29 +74,9 @@ footer {
     color: $header-and-footer-font-color;
 }
 
-#slideshow {
-    overflow: hidden;
-    height: 510px;
-    width: 728px;
-    margin: 0 auto;
-  }
-  
-.slide-wrapper {
-  width: 728px * $number-images;
-  animation: slide ($number-images * 5 * 1s) ease infinite;
-}
-  
-.slide {
-  float: left;
-  height: 510px;
-  width: 728px;
-}
-
-@import "_keyframes.scss";
-
 .section {
-  margin: 5vw;
-  text-align: justify;
+    margin: 5vw;
+    text-align: justify;
 }
 
 table,
@@ -125,9 +102,9 @@ td {
             color: black;
         }
         a.active {
-          background-color: lighten($main-green, 30);
-          color: white;
-      }
+            background-color: lighten($main-green, 30);
+            color: white;
+        }
     }
 }
 
@@ -141,12 +118,30 @@ td {
     padding-top: 8vh;
 }
 
-
 * {
     font-family: "Arial";
 }
 
+@import "_keyframes.scss";
 @media screen and (max-width: 785px) {
+    #slideshow {
+        overflow: hidden;
+        height: 90vw;
+        width: 90vw;
+        margin: 0 auto;
+      }
+      
+    .slide-wrapper {
+      width: 90vw * $number-images;
+      animation: slide2 ($number-images * 5 * 1s) ease infinite;
+    }
+      
+    .slide {
+      float: left;
+      height: 90vw;
+      width: 90vw;
+    }
+    
     input[type=checkbox]:checked~.amenu {
         display: block;
         width: 100vw;
@@ -164,6 +159,21 @@ td {
 }
 
 @media screen and (min-width: 786px) {
+    #slideshow {
+        overflow: hidden;
+        height: 510px;
+        width: 728px;
+        margin: 0 auto;
+    }
+    .slide-wrapper {
+        width: 728px * $number-images;
+        animation: slide ($number-images * 5 * 1s) ease infinite;
+    }
+    .slide {
+        float: left;
+        height: 510px;
+        width: 728px;
+    }
     .amenu {
         overflow: hidden;
     }

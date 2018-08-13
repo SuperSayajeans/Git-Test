@@ -2,7 +2,6 @@
 
 $number-images: 6;
 $jump: 100 / $number-images;
-
 /* keyframes manuais passados 
 @keyframes slide2{
 	12% {margin-left: 0px;}
@@ -32,10 +31,22 @@ $jump: 100 / $number-images;
 	78% {margin-left: -450vw;}
 	}
 	*/
-	
-	@keyframes slide {
+
+@keyframes slide {
     @for $i from 1 through ($number-images - 1) {
-      $actual:  percentage($i * $jump / 100);
-      #{$actual} {margin-left: -728px * $i;}
+        $actual: percentage($i * $jump / 100);
+        #{$actual} {
+            margin-left: -728px * $i;
+        }
     }
-  }
+}
+
+
+@keyframes slide2 {
+    @for $i from 1 through ($number-images - 1) {
+        $actual: percentage($i * $jump / 100);
+        #{$actual} {
+            margin-left: -90vw * $i;
+        }
+    }
+}
