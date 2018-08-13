@@ -1,0 +1,29 @@
+/* Utilizados no slide show:*/
+
+@keyframes slide {
+	12% {margin-left: 0px;}
+	24% {margin-left: -728px;}
+	30% {margin-left: -728px;}
+	36% {margin-left: -1456px;}
+	42% {margin-left: -1456px;}
+	48% {margin-left: -2184px;}
+	54% {margin-left: -2184px;}
+	60% {margin-left: -2912px;}
+	66% {margin-left: -2912px;}
+	72% {margin-left: -3640px;}
+	78% {margin-left: -3640px;}
+  }
+
+  @keyframes slide2 {
+	12% {margin-left: 0px;}
+	24% {margin-left: -90vw;}
+	30% {margin-left: -90vw;}
+	36% {margin-left: -180vw;}
+	42% {margin-left: -180vw;}
+	48% {margin-left: -270vw;}
+	54% {margin-left: -270vw;}
+	60% {margin-left: -360vw;}
+	66% {margin-left: -360vw;}
+	72% {margin-left: -450vw;}
+	78% {margin-left: -450vw;}
+  }

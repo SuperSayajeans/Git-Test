@@ -1,12 +1,12 @@
-/*
-  $ sass --watch style.scss style.css
-*/
+// Comando para transpilar  $ sass --watch style.scss style.css
 
-/*
-  **Cores
-*/
+// Comentários com // não irão aparecer no css, porém os com /**/ irão!
 
-$main-green: forestgreen;
+@import "_keyframes.scss";
+ 
+
+// **Cores
+ $main-green: forestgreen;
 $title-font: normal 24px/1.5 'Open Sans',
 sans-serif;
 $menu-font: normal,
@@ -19,10 +19,8 @@ $top-menu-font-color: #f2f2f2;
 $background-image-color: lighten($main-green, 2);
 $header-and-footer-font-color: orangered;
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-/*
-  Cores**
-*/
-
+// Fim da declaração de cores
+ 
 .show-menu {
     font-family: $menu-font;
     text-decoration: none;
@@ -54,7 +52,7 @@ $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
 div.container {
     color: $cool-red;
-    background: #fff;
+    background: white;
     width: 100%;
     box-shadow: $box-shadow-bottom-only;
 }
@@ -143,7 +141,7 @@ td {
     padding-top: 8vh;
 }
 
-@import url("image-animation.css");
+
 * {
     font-family: "Arial";
 }
