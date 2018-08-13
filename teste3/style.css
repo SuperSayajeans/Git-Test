@@ -65,7 +65,7 @@ header, footer {
 
 .slide-wrapper {
   width: 4368px;
-  animation: slide 28s ease infinite;
+  animation: slide 30 ease infinite;
 }
 
 .slide {
@@ -74,6 +74,23 @@ header, footer {
   width: 728px;
 }
 
+@keyframes slide {
+  16% {
+    margin-left: -728px;
+  }
+  33% {
+    margin-left: -1456px;
+  }
+  50% {
+    margin-left: -2184px;
+  }
+  66% {
+    margin-left: -2912px;
+  }
+  83% {
+    margin-left: -3640px;
+  }
+}
 .section {
   margin: 5vw;
   text-align: justify;

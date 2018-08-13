@@ -2,6 +2,8 @@ $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 $menu-font: normal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $cool-red: #F44336;
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+$number-images: 6;
+$jump: 100 / $number-images;
 
 .show-menu {
     font-family: $menu-font;
@@ -69,8 +71,8 @@ body {
   }
   
   .slide-wrapper {
-    width: 4368px;
-    animation: slide 28s ease infinite;
+    width: 728px * $number-images;
+    animation: slide ($number-images * 5) ease infinite;
   }
   
   .slide {
@@ -79,6 +81,13 @@ body {
     width: 728px;
   }
   
+  @keyframes slide {
+    @for $i from 1 through ($number-images - 1) {
+      $actual:  percentage($i * $jump / 100);
+      #{$actual} {margin-left: -728px * $i;}
+    }
+  }
+
   .section {
     margin: 5vw;
     text-align: justify;
