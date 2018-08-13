@@ -1,10 +1,32 @@
-$title-font: normal 24px/1.5 'Open Sans', sans-serif;
-$menu-font: normal, "Helvetica Neue", Helvetica, Arial, sans-serif;
+// Comando para transpilar  $ sass --watch style.scss style.css
+
+// Comentários com // não irão aparecer no css, porém os com /**/ irão!
+
+@import "_keyframes.scss";
+ 
+
+// **Cores
+ $main-green: forestgreen;
+$title-font: normal 24px/1.5 'Open Sans',
+sans-serif;
+$menu-font: normal,
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
 $cool-red: #F44336;
+$top-menu-font-color: #f2f2f2;
+$background-image-color: lighten($main-green, 2);
+$header-and-footer-font-color: orangered;
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
+<<<<<<< HEAD
 $number-images: 6;
 $jump: 100 / $number-images;
 
+=======
+// Fim da declaração de cores
+ 
+>>>>>>> 8ef57451e73c1106743109865b982c2a20ca96c7
 .show-menu {
     font-family: $menu-font;
     text-decoration: none;
@@ -18,52 +40,52 @@ $jump: 100 / $number-images;
 .float {
     position: relative;
     right: 22%;
-  }
-  
-  .inline {
+}
+
+.inline {
     display: inline;
-  }
-  
-  .signature {
+}
+
+.signature {
     width: 18vw;
     height: 32vh;
-  }
-  
-  .central {
+}
+
+.central {
     margin-left: auto;
     margin-right: auto;
-  }
-  
+}
 
 div.container {
-  color: $cool-red;
-  background: #fff;
-  width: 100%;
-  box-shadow: $box-shadow-bottom-only;
+    color: $cool-red;
+    background: white;
+    width: 100%;
+    box-shadow: $box-shadow-bottom-only;
 }
 
 body {
-    background-color: forestgreen;
-  }
-  
-  h1 {
+    background-color: $main-green;
+}
+
+h1 {
     vertical-align: middle;
-  }
-  
-  img {
-    background-color: red;
+}
+
+img {
+    background-color: $background-image-color;
     animation-iteration-count: 1;
     animation-duration: 2s;
-  }
-  
-  header, footer {
-    background-color: darkgreen;
+}
+
+header,
+footer {
+    background-color: darken($main-green, 10);
     text-align: center;
     padding: 20px;
-    color: orangered;
-  }
-  
-  #slideshow {
+    color: $header-and-footer-font-color;
+}
+
+#slideshow {
     overflow: hidden;
     height: 510px;
     width: 728px;
@@ -91,85 +113,86 @@ body {
   .section {
     margin: 5vw;
     text-align: justify;
-  }
-  
-  table, th, td {
+}
+
+table,
+th,
+td {
     border: 1px solid black;
-  }
-  
-  .topnav {
+}
+
+.topnav {
     overflow: hidden;
     background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav .amenu a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav .amenu a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
-  
-  .sticky {
+    a {
+        float: left;
+        color: $top-menu-font-color;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .amenu {
+        a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        a.active {
+          background-color: lighten($main-green, 30);
+          color: white;
+      }
+    }
+}
+
+.sticky {
     position: fixed;
     top: 0;
     width: 100%;
-  }
-  
-  .sticky+.content {
-    padding-top: 8vh;
-  }
+}
 
-  @import url("image-animation.css");
+.sticky+.content {
+    padding-top: 8vh;
+}
+
+
 * {
-  font-family: "Arial";
+    font-family: "Arial";
 }
 
 @media screen and (max-width: 785px) {
-  input[type=checkbox]:checked~.amenu {
-    display: block;
-    width: 100vw;
-    position: relative;
-  }
-  .amenu {
-    overflow: hidden;
-  }
-  .amenu {
-    display: none;
-  }
-  .show-menu {
-    display: block;
-  }
+    input[type=checkbox]:checked~.amenu {
+        display: block;
+        width: 100vw;
+        position: relative;
+    }
+    .amenu {
+        overflow: hidden;
+    }
+    .amenu {
+        display: none;
+    }
+    .show-menu {
+        display: block;
+    }
 }
 
 @media screen and (min-width: 786px) {
-  .amenu {
-    overflow: hidden;
-  }
-  .amenu {
-    display: unset;
-    width: auto;
-  }
-  .show-menu {
-    display: none;
-  }
+    .amenu {
+        overflow: hidden;
+    }
+    .amenu {
+        display: unset;
+        width: auto;
+    }
+    .show-menu {
+        display: none;
+    }
 }
 
 input[type=checkbox] {
-  display: none;
+    display: none;
 }
 
 #labelmenu:hover {
-  cursor: pointer;
+    cursor: pointer;
 }
