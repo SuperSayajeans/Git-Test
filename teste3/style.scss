@@ -1,6 +1,15 @@
+/*
+  $ sass --watch style.scss style.css
+*/
+
+$main-green: forestgreen;
 $title-font: normal 24px/1.5 'Open Sans', sans-serif;
 $menu-font: normal, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $cool-red: #F44336;
+$top-menu-font-color: #f2f2f2;
+$background-image-color: lighten($main-green, 2);
+$header-and-footer-font-color: orangered;
+
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
 
 .show-menu {
@@ -41,7 +50,7 @@ div.container {
 }
 
 body {
-    background-color: forestgreen;
+    background-color: $main-green;
   }
   
   h1 {
@@ -49,16 +58,16 @@ body {
   }
   
   img {
-    background-color: red;
+    background-color: $background-image-color;
     animation-iteration-count: 1;
     animation-duration: 2s;
   }
   
   header, footer {
-    background-color: darkgreen;
+    background-color: darken($main-green, 10);
     text-align: center;
     padding: 20px;
-    color: orangered;
+    color: $header-and-footer-font-color;
   }
   
   #slideshow {
@@ -95,7 +104,7 @@ body {
   
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: $top-menu-font-color;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -108,7 +117,7 @@ body {
   }
   
   .topnav .amenu a.active {
-    background-color: #4CAF50;
+    background-color: lighten($main-green, 30);
     color: white;
   }
   
