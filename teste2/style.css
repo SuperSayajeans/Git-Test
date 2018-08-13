@@ -1,30 +1,4 @@
-@import url("image-animation.css");
-* {
-  font-family: "Arial";
-}
-
-body {
-  background-color: forestgreen;
-}
-
-h1 {
-  vertical-align: middle;
-}
-
-/* The element to apply the animation to */
-
-img {
-  background-color: red;
-  animation-iteration-count: 1;
-  animation-duration: 2s;
-}
-
-header, footer {
-  background-color: darkgreen;
-  text-align: center;
-  padding: 20px;
-  color: orangered;
-}
+/*Utilidades*/
 
 .float {
   position: relative;
@@ -38,6 +12,35 @@ header, footer {
 .signature {
   width: 18vw;
   height: 32vh;
+}
+
+.central {
+  /* text-align: center; */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*Component*/
+
+body {
+  background-color: forestgreen;
+}
+
+h1 {
+  vertical-align: middle;
+}
+
+img {
+  background-color: red;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+}
+
+header, footer {
+  background-color: darkgreen;
+  text-align: center;
+  padding: 20px;
+  color: orangered;
 }
 
 #slideshow {
@@ -65,12 +68,6 @@ header, footer {
 
 table, th, td {
   border: 1px solid black;
-}
-
-.central {
-  /* text-align: center; */
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .topnav {
@@ -117,6 +114,13 @@ table, th, td {
   display: none;
 }
 
+/*State*/
+
+@import url("image-animation.css");
+* {
+  font-family: "Arial";
+}
+
 @media screen and (max-width: 785px) {
   input[type=checkbox]:checked~.amenu {
     display: block;
@@ -147,15 +151,9 @@ table, th, td {
   }
 }
 
-/* Hide the square of the checkbox: */
-
 input[type=checkbox] {
   display: none;
 }
-
-/*Show menu when invisible checkbox is checked*/
-
-
 
 #labelmenu:hover {
   cursor: pointer;
