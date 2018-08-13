@@ -1,6 +1,10 @@
 /* Utilizados no slide show:*/
 
-@keyframes slide {
+$number-images: 6;
+$jump: 100 / $number-images;
+
+/* keyframes manuais passados 
+@keyframes slide2{
 	12% {margin-left: 0px;}
 	24% {margin-left: -728px;}
 	30% {margin-left: -728px;}
@@ -14,7 +18,7 @@
 	78% {margin-left: -3640px;}
   }
 
-  @keyframes slide2 {
+  @keyframes slide3 {
 	12% {margin-left: 0px;}
 	24% {margin-left: -90vw;}
 	30% {margin-left: -90vw;}
@@ -26,4 +30,12 @@
 	66% {margin-left: -360vw;}
 	72% {margin-left: -450vw;}
 	78% {margin-left: -450vw;}
+	}
+	*/
+	
+	@keyframes slide {
+    @for $i from 1 through ($number-images - 1) {
+      $actual:  percentage($i * $jump / 100);
+      #{$actual} {margin-left: -728px * $i;}
+    }
   }

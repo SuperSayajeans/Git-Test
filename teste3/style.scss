@@ -2,9 +2,6 @@
 
 // Comentários com // não irão aparecer no css, porém os com /**/ irão!
 
-@import "_keyframes.scss";
- 
-
 // **Cores
  $main-green: forestgreen;
 $title-font: normal 24px/1.5 'Open Sans',
@@ -87,27 +84,22 @@ footer {
     margin: 0 auto;
   }
   
-  .slide-wrapper {
-    width: 728px * $number-images;
-    animation: slide ($number-images * 5) ease infinite;
-  }
+.slide-wrapper {
+  width: 728px * $number-images;
+  animation: slide ($number-images * 5 * 1s) ease infinite;
+}
   
-  .slide {
-    float: left;
-    height: 510px;
-    width: 728px;
-  }
-  
-  @keyframes slide {
-    @for $i from 1 through ($number-images - 1) {
-      $actual:  percentage($i * $jump / 100);
-      #{$actual} {margin-left: -728px * $i;}
-    }
-  }
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
 
-  .section {
-    margin: 5vw;
-    text-align: justify;
+@import "_keyframes.scss";
+
+.section {
+  margin: 5vw;
+  text-align: justify;
 }
 
 table,
