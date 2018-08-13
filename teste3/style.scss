@@ -19,14 +19,9 @@ $top-menu-font-color: #f2f2f2;
 $background-image-color: lighten($main-green, 2);
 $header-and-footer-font-color: orangered;
 $box-shadow-bottom-only: 0 2px 1px 0 rgba(0, 0, 0, 0.2);
-<<<<<<< HEAD
 $number-images: 6;
 $jump: 100 / $number-images;
 
-=======
-// Fim da declaração de cores
- 
->>>>>>> 8ef57451e73c1106743109865b982c2a20ca96c7
 .show-menu {
     font-family: $menu-font;
     text-decoration: none;
