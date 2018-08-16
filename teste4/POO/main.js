@@ -62,10 +62,13 @@ var poo;
     poo.Cachorro = Cachorro;
 })(poo || (poo = {}));
 /// <reference path="Cachorro.ts" />
+// tsc main.ts --outFile main.js
 var poo;
 (function (poo) {
     var dog1 = new poo.Cachorro(4, 20, undefined, "pintcher");
     var canino1 = new poo.Canino(12, 2);
     dog1.fazerBarulho();
+    if (dog1.domesticavel)
+        console.log("Doguinho é amigo");
     canino1.fazerBarulho();
 })(poo || (poo = {}));
