@@ -1,0 +1,14 @@
+@import "../../styles.scss";
+.darkfooter {
+    background-color: $primary-bg-color;
+    overflow: hidden;
+    color: $primary-bg-font-color;
+    text-align: center;
+    width: 100vw;
+
+}
+
+.copyleft {
+    display:inline-block;
+    transform: rotate(180deg);
+  }

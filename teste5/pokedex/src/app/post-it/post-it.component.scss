@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+
+.menu{
+    margin-bottom: 2vh;
+    margin-top: 2vh;
+}
+.postshit {
+    position:relative;
+    .close{
+        
+        float: right;
+        margin-left: 90%;
+        top:0%;
+        position:absolute;
+        cursor: pointer;
+    }
+    .content{
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+       
+    }
+    background-image: linear-gradient(lighten(#ffe949,20), darken(#ffe949,5));
+    max-width: 90vw;
+    max-height: 90vw;
+
+    min-width: 20vw;
+    min-height: 20vw;
+
+    width: 20vh;
+    height: 20vh;
+
+    margin-bottom: 2vh;
+    margin-left: 2vh;
+
+    float: left;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    font-family: 'Indie Flower', cursive;
+
+    font-weight: bold;
+}

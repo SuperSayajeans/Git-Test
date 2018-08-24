@@ -1,0 +1,10 @@
+<div style="text-align:center">
+  <h1>
+    Simple Pokedex!
+  </h1>
+</div>
+
+<div class="topnav">
+  <a routerLink='/home' routerLinkActive="active">Home</a>
+  <a *ngFor="let component of components;" routerLink="/{{component}}" routerLinkActive="active" >{{component | titlecase}}</a>
+</div> 

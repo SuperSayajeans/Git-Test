@@ -1,0 +1,12 @@
+<h2>Anotações</h2>
+<div class="menu">
+  <label for="msg"> Mensagem: <input (keydown.enter)="addPostIt()" [(ngModel)]="msg" type="text" id="msg"></label>
+  <button (click)="addPostIt()"> Salvar</button>
+  <button (click)="logIt()"> log</button>
+</div>
+<div [sortablejs]="posts">
+  <div class="postshit" draggable="true" *ngFor="let post of posts; index as i;">
+    <div class="close" id="{{i}}" (click)="deletePostIt($event)">X</div>
+    <div class="content">{{post}}</div>
+  </div>
+</div>
