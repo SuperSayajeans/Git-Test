@@ -6,6 +6,7 @@ import {GrassComponent} from './grass/grass.component';
 import {NotFoundComponent} from './not-found/not-found.component';
 import { HomeComponent } from './home/home.component';
 import { PostItComponent } from './post-it/post-it.component';
+import {FormsComponent} from './forms/forms.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full'},
@@ -14,6 +15,7 @@ const routes: Routes = [
   {path: 'fire', component: FireComponent},
   {path: 'grass', component: GrassComponent},
   {path: 'post-it', component: PostItComponent},
+  {path: 'forms', component: FormsComponent},
   {path: '**', component: NotFoundComponent}
 ];
 

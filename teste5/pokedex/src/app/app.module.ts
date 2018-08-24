@@ -15,6 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { PostItComponent } from './post-it/post-it.component';
 import {FormsModule} from '@angular/forms';
 import {SortablejsModule} from '../../node_modules/angular-sortablejs';
+import { FormsComponent } from './forms/forms.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import {SortablejsModule} from '../../node_modules/angular-sortablejs';
     FooterComponent,
     HeaderComponent,
     PostItComponent,
+    FormsComponent,
   ],
   imports: [
     BrowserModule,
